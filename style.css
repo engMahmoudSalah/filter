@@ -13,7 +13,7 @@ body{
 
 @font-face {
     font-family: 'cairo';
-    src: url(./fonts/Cairo-Regular.ttf);
+    src: url(/fonts/Cairo-Regular.ttf);
 }
 
 .header{
@@ -48,7 +48,7 @@ body{
     margin-top: 60px;
     height: 475px;
     width: 100%;
-    background-image: url(./img/7.jpg);
+    background-image: url(/img/7.jpg);
     background-position: center center;
     position: relative;
     animation: imgAnimi 25s linear infinite both;
@@ -84,15 +84,15 @@ body{
 
 @keyframes imgAnimi {
     0%,33%{
-        background-image: url(./img/7.jpg);
+        background-image: url(/img/7.jpg);
     }
     
     34%,66%{
-        background-image: url(./img/5.jpg);
+        background-image: url(/img/5.jpg);
     }
     
     67%,100%{
-        background-image: url(./img/1.jpg);
+        background-image: url(img/1.jpg);
     }
 }
 
