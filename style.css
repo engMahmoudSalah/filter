@@ -48,7 +48,7 @@ body{
     margin-top: 60px;
     height: 475px;
     width: 100%;
-    background-image: url(../img/7.jpg);
+    background-image: url(img/7.jpg);
     background-position: center center;
     position: relative;
     animation: imgAnimi 25s linear infinite both;
