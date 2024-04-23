@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'cairo';
+    
+}
+
+body{
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'cairo';
+    src: url(/fonts/Cairo-Regular.ttf);
+}
+
+.header{
+    height: 65px;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.4px solid #ddd;
+    padding-inline:5% ;
+    /* position: relative; */
+    z-index: 99;
+    top: 0px;
+    background-color: white;
+
+
+    & .img{
+        height: 50px;
+        width: auto;
+        /* background-color: red; */
+    }
+
+    .p1{
+        color: #00549D;
+    }
+}
+
+
+.sec1{
+    margin-top: 60px;
+    height: 475px;
+    width: 100%;
+    background-image: url(/img/7.jpg);
+    background-position: center center;
+    position: relative;
+    animation: imgAnimi 25s linear infinite both;
+    
+    .layer{
+        padding: 5%;
+        position: absolute;
+        inset: 0px;
+        background-color: #e5e8ebc9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        .img{
+            width: 500px;
+        }
+
+        .h1{
+            font-weight: 100;
+            text-align: center;
+            color: #00549D;
+        }
+
+        .p{
+            margin-top: 10px;
+        }
+
+        
+    }
+
+}
+
+@keyframes imgAnimi {
+    0%,33%{
+        background-image: url(/img/7.jpg);
+    }
+    
+    34%,66%{
+        background-image: url(/img/5.jpg);
+    }
+    
+    67%,100%{
+        background-image: url(/img/1.jpg);
+    }
+}
+
+@media  screen and (max-width:786px) {
+    .sec1{
+
+    
+        .layer{
+
+    
+            .img{
+                width: 220px;
+            }
+    
+            .h1{
+                font-size: 24px;
+            }
+    
+            .p{
+                margin-top: 10px;
+            }
+    
+            
+        }
+    
+    }
+}
+
+
+
+.sec2{
+    width: 100%;
+    height: 50px;
+    background-color: #739CD2;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    
+    .h3{
+        position: absolute;
+        color: white;
+        font-weight: 100;
+        animation: pAnimi 30s 0s linear infinite ;
+        height: 32px;
+        /* background-color: rebeccapurple; */
+    }
+    
+
+
+
+}
+
+@keyframes pAnimi {
+    0%{
+        left: -40%;
+
+    }
+
+    100%{
+        left: 100%;
+    }
+    
+}
+
+
+
+.sec3{
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    width: 100%;
+    background-color: #ddd;
+    padding-inline: 5%;
+    padding-block: 80px;
+    gap: 50px;
+
+
+    .header1{
+        flex-flow: column;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .p{
+            color: rgb(89, 89, 89);
+        }
+    }
+
+    .main{
+        /* height: 1000px; */
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        justify-content: space-evenly;
+        align-items: start;
+        gap:35px;
+        row-gap:60px ;
+
+        .card{
+            flex: 0 0 200px;
+            /* background-color: gold; */
+            
+            
+
+            .d-img{
+                border-radius: 5px;
+                overflow: hidden;
+                height: 280px;
+                background-color: #eee;
+                
+                .img{
+                    object-fit: contain;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .p{
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    .certi{
+        width: 100%;
+        background-color: #bbb;
+        /* height: 500px; */
+        display: flex;
+        flex-flow: column;
+        padding-block: 20px;
+        border-radius: 10px;
+        gap: 40px;
+
+        .header2{
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-certi{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: row wrap;
+            gap: 50px;
+
+            .certi-card{
+                flex: 0 1 200px;
+
+                .img{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .sec3{
+
+    
+        .main{
+
+            justify-content: space-evenly;
+            align-items: start;
+            gap:10px;
+            row-gap:40px ;
+    
+            .card{
+                flex: 0 0 140px;
+                /* background-color: gold; */
+                .d-img{
+                    border-radius: 5px;
+                    overflow: hidden;
+                    height: 200px;
+                    background-color: #eee;
+                    
+                    .img{
+                        object-fit: contain;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.Sec4{
+    /* height: 400px; */
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid #ddd;
+
+    .item{
+        /* flex: 1 1 auto; */
+        /* background-color: red; */
+    }
+    
+    .item1{
+        padding-inline: 5%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        gap: 20px;
+        padding-block: 50px;
+        color: #000;
+
+        .img{
+            height: 160px;
+            width: 350px;
+        }
+
+    }
+
+    .item2{
+        flex: 1 5 auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: start;
+        justify-content: center;
+        /* background-color: aliceblue; */
+        gap: 25px;  
+        padding-block: 50px;  
+
+        .s{
+            color: #00549D;
+            /* background-color: gainsboro; */
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: column;
+            gap: 10px;
+            padding-left: 5%;
+
+            h5{
+                padding-bottom: 10px;
+            }
+
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Sec4{
+
+        
+        .item1{
+            padding-block: 30px;    
+            .img{
+                height: 100px;
+                width: 200px;
+            }
+        
+        }
+    }
+    
+}
