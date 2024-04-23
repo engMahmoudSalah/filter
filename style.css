@@ -197,6 +197,8 @@ body{
 
         .card{
             flex: 0 0 200px;
+            direction: rtl;
+            
             /* background-color: gold; */
             
             
