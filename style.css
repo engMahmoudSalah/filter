@@ -272,12 +272,12 @@ body{
             row-gap:40px ;
     
             .card{
-                flex: 0 0 140px;
+                flex: 0 0 160px;
                 /* background-color: gold; */
                 .d-img{
                     border-radius: 5px;
                     overflow: hidden;
-                    height: 200px;
+                    height: 220px;
                     background-color: #eee;
                     
                     .img{
