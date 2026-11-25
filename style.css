@@ -137,6 +137,7 @@ body{
         color: white;
         font-weight: 100;
         animation: pAnimi 30s 0s linear infinite ;
+        white-space: nowrap;
         height: 32px;
         /* background-color: rebeccapurple; */
     }
@@ -382,3 +383,4 @@ i{
     }
     
 }
+@media (prefers-reduced-motion: reduce){ .sec2 .h3{ animation:none; position:static; } }
