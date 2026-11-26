@@ -384,3 +384,15 @@ i{
     
 }
 @media (prefers-reduced-motion: reduce){ .sec2 .h3{ animation:none; position:static; } }
+
+#reminder{direction:rtl;max-width:760px;margin:70px auto 0;padding:24px 20px;border:1px solid #cfe0f0;border-radius:18px;background:#f4f9ff;color:#0b2a4a}
+#reminder .rem-h{text-align:center;color:#00549D;margin:0 0 8px}
+#reminder .rem-p{font-size:15px;line-height:1.8;margin:0 0 14px}
+#reminder .rem-l{display:flex;flex-direction:column;gap:6px;font-weight:700;margin-bottom:12px}
+#reminder input[type=date]{font-family:inherit;font-size:16px;padding:10px 12px;border:1px solid #9db8d3;border-radius:10px;background:#fff;color:#0b2a4a}
+#reminder .rem-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+#reminder .rem-list li{display:flex;flex-direction:column;gap:2px;background:#fff;border-radius:12px;padding:10px 14px;border-inline-start:6px solid #2e9e5b}
+#reminder .rem-list li.soon{border-inline-start-color:#d98a00}
+#reminder .rem-list li.late{border-inline-start-color:#c62828}
+#reminder .rem-btn{margin-top:14px;background:#00549D;color:#fff;border:0;border-radius:999px;padding:10px 22px;font-family:inherit;font-weight:700;font-size:15px;cursor:pointer}
+#reminder .rem-btn:hover{background:#003f75}
