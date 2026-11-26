@@ -383,7 +383,11 @@ i{
     }
     
 }
-@media (prefers-reduced-motion: reduce){ .sec2 .h3{ animation:none; position:static; } }
+.sec2{overflow:hidden;direction:ltr}
+.sec2 .h3{position:static!important;display:inline-block;margin:0;line-height:32px;animation:rwTicker 40s linear infinite!important}
+.sec2 .h3 span{display:inline-block;padding-inline-end:90px}
+@keyframes rwTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){ .sec2 .h3{ animation:none!important; transform:none; } }
 
 #reminder{direction:rtl;max-width:760px;margin:70px auto 0;padding:24px 20px;border:1px solid #cfe0f0;border-radius:18px;background:#f4f9ff;color:#0b2a4a}
 #reminder .rem-h{text-align:center;color:#00549D;margin:0 0 8px}
